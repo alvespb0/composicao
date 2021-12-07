@@ -1,4 +1,5 @@
 package composicao;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -14,11 +15,12 @@ public class motor {
     private int potencia;
 
     public motor() {
-        potencia=1000; //valor padrao
-        
+        potencia = 1000; //valor padrao
+
     }
-    public motor (int potencia){
-        this.potencia=potencia;//this serve para falar sobre o atributo dentro da classe 
+
+    public motor(int potencia) {
+        this.potencia = potencia;//this serve para falar sobre o atributo dentro da classe 
     }
 
     public int getPotencia() {

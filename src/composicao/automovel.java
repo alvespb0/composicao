@@ -1,4 +1,5 @@
 package composicao;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -10,12 +11,27 @@ package composicao;
  * @author IFSC
  */
 public class automovel {
-    private motor motor;
+
+    public motor motor;
     private direcao direcao;
-    public automovel(){
+    
+    
+    
+    public void ligarPelaPrimeiraVez() {
+        motor = new motor();
+        direcao = new direcao();
+    }
+
+    public void ligarPelaPrimeiraVez(int potencia, String cor) {
+        motor = new motor(potencia);
+        direcao = new direcao(cor);
+    }
+
+    public automovel() {
         motor = new motor();
     }
-    public automovel(int potencia){
-        motor = new motor (potencia);
+
+    public automovel(int potencia) {
+        motor = new motor(potencia);
     }
 }
