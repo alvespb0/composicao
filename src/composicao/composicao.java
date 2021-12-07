@@ -12,9 +12,10 @@ package composicao;
 public class composicao {
 
     public static void main(String[] args) {
-        
-        
-        
+        automovel carro = new automovel ();
+        automovel carro2 = new automovel(1600, "verde");
+        carro2.imprimeautomovel();
+        carro.imprimeautomovel();
         
     }
 }

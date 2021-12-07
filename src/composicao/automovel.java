@@ -13,25 +13,32 @@ package composicao;
 public class automovel {
 
     public motor motor;
-    private direcao direcao;
+    public direcao direcao;
     
     
     
     public void ligarPelaPrimeiraVez() {
         motor = new motor();
-        direcao = new direcao();
+        
     }
 
-    public void ligarPelaPrimeiraVez(int potencia, String cor) {
+    public void ligarPelaPrimeiraVez(int potencia) {
         motor = new motor(potencia);
-        direcao = new direcao(cor);
+        
     }
 
     public automovel() {
         motor = new motor();
+        direcao = new direcao();
     }
 
-    public automovel(int potencia) {
+    public automovel(int potencia, String cor) {
         motor = new motor(potencia);
+        direcao = new direcao(cor);
+    }
+    void imprimeautomovel (){
+        System.out.println("cor: "+direcao.getCor());
+        System.out.println("potencia do motor: "+motor.getPotencia());
+        
     }
 }

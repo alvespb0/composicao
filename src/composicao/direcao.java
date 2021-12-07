@@ -12,7 +12,7 @@ package composicao;
  */
 public class direcao {
 
-    private String cor;
+    public String cor;
     
     public direcao (){
         cor="amarelo";
